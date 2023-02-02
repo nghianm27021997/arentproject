@@ -1,0 +1,45 @@
+@import "../../variable";
+
+.navigation {
+  width: 100%;
+  background-color: $headerFooterBg;
+  height: 64px;
+  display: flex;
+  color: $whiteColor;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  img {
+    width: 109px;
+    height: 58px;
+    margin: 0px 156px;
+  }
+
+  ul {
+    width: calc(100% - 374px);
+    display: flex;
+    justify-content: center;
+    li {
+      display: flex;
+      width: 160px;
+      list-style: none;
+      img {
+        width: 26px;
+        height: 26px;
+        margin: 0 8px 0 0;
+      }
+
+      .iconContent {
+        position: relative;
+        .subIcon {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: -4px;
+          right: -8px;
+        }
+      }
+    }
+  }
+}
