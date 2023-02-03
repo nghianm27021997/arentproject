@@ -1,0 +1,20 @@
+.inline {
+  display: inline;
+  transition: 1s;
+}
+
+.none {
+  display: none;
+}
+
+.scroll-button {
+  img {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    right: 50px;
+    top: 70%;
+    z-index: 1;
+    cursor: pointer;
+  }
+}

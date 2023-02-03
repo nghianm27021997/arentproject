@@ -1,0 +1,29 @@
+@import "../../../variable";
+
+.mealhistory {
+  margin: 0px 160px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .meal-content {
+    position: relative;
+    flex-basis: 24%;
+    height: 232px;
+    margin: 0px 8px 8px 0px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      color: $whiteColor;
+      padding: 7px 25px 7px 8px;
+      background: $yellowBg;
+    }
+  }
+}

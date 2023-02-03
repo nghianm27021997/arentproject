@@ -1,0 +1,41 @@
+@import "../../../variable";
+
+.achievement {
+  display: flex;
+  height: 316px;
+  width: 100%;
+  flex-shrink: 0;
+
+  .achievement-rate {
+    width: 540px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img:last-child {
+      width: 181px;
+      height: 181px;
+      position: absolute;
+      left: 180px;
+      top: 130px;
+    }
+  }
+
+  .achievement-chart {
+    width: calc(100% - 540px);
+    background-color: $chartBg;
+    display: flex;
+    align-items: center;
+
+    .chart {
+      margin: 0 auto;
+    }
+
+    img {
+      width: 589px;
+    }
+  }
+}

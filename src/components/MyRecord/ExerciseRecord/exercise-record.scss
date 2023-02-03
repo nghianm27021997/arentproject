@@ -1,0 +1,82 @@
+@import "../../../variable";
+
+.exercise-record {
+  margin-top: $mt56;
+  background: $headerFooterBg;
+  padding: 16px 24px;
+
+  div {
+    display: flex;
+
+    span {
+      color: $whiteColor;
+      font-size: $size15;
+    }
+
+    span:last-child {
+      margin-left: 40px;
+      font-weight: 400;
+      font-size: $size22;
+    }
+  }
+
+  #main::-webkit-scrollbar {
+    width: 6px;
+    background-color: $grayBg;
+  }
+
+  #main::-webkit-scrollbar-thumb {
+    background-color: $yellowBg;
+    border-radius: 10px;
+  }
+
+  #main::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $grayBg;
+  }
+
+  .main-content {
+    width: 100%;
+    display: flex;
+    margin: 4px 0px;
+    max-height: 184px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .content {
+      list-style: circle;
+      display: flex;
+      color: $whiteColor;
+      border-bottom: 1px solid $grayBg;
+      padding: 2px 0px;
+      min-width: 416px;
+      justify-content: space-between;
+
+      span {
+        color: $yellowBg;
+        font-size: $size18;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        flex-grow: 1;
+
+        span {
+          color: $yellowBg;
+          margin-left: unset !important;
+          font-size: $size15 !important;
+          margin-top: -5px;
+        }
+      }
+
+      .dot {
+        color: $whiteColor;
+        flex-basis: 20px;
+        font-size: $size11;
+      }
+    }
+  }
+}

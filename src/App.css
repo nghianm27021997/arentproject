@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Thin.ttf") format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Light.ttf") format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Medium.ttf") format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("components/Fonts/Inter/static/Inter-Black.ttf") format('truetype');
+  font-weight: 900;
+}
+
+
+

@@ -1,0 +1,41 @@
+@import "../../../variable";
+
+.my-diary {
+  margin-top: $mt56;
+
+  p {
+    margin-top: unset;
+    margin-bottom: 10px;
+    font-size: $size22;
+    color: $headerFooterBg;
+    font-style: normal;
+  }
+
+  .list-diary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+      flex-basis: 24%;
+      height: 231px;
+      margin-bottom: 15px;
+      border: 2px solid $border;
+      padding: 16px;
+
+      p {
+        font-size: $size18;
+
+        &:nth-child(2) {
+          margin-top: -12px;
+          margin-bottom: 10px;
+        }
+
+        &:last-child {
+          font-size: $size12;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
