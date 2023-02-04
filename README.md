@@ -1,4 +1,4 @@
-### "npm install" to install package, "npm start" to run project
+### "npm install & yarn install" to install package, "npm start or yarn start" to run project
 
 The steps that I took while doing the test included:
  1) Install scss, create directory trees similar to the content on the website to facilitate maintenance and search, including:
