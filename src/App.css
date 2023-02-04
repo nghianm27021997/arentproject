@@ -73,5 +73,11 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  src: url("components/Fonts/HiraginoKakuGothicPro/Hiragino-Kaku-Gothic-Pro.otf") format('opentype');
+  font-weight: 300;
+}
+
 
 

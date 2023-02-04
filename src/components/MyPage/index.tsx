@@ -3,6 +3,8 @@ import Transit from "./Transit";
 import MealHistory from "./MealHistory";
 import Button from "../Button";
 
+import { MEAL_HISTORY_CONTENT } from "../../constant";
+
 import "./mypage.scss";
 
 const MyPage = () => {
@@ -10,8 +12,10 @@ const MyPage = () => {
     <div className='my-page'>
       <Achievement />
       <Transit />
-      <MealHistory />
-      <Button text="記録をもっと見る" />
+      <div className="meal-history-box">
+        <MealHistory ListData={MEAL_HISTORY_CONTENT} />
+      </div>
+      <Button text='記録をもっと見る' />
     </div>
   );
 };

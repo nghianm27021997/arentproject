@@ -1,0 +1,37 @@
+@import "../../../variable";
+
+.recommended {
+  display: flex;
+  justify-content: space-between;
+  color: $whiteColor;
+
+  div {
+    flex-basis: 23%;
+    height: 144px;
+    background: $chartBg;
+    text-align: center;
+    padding: 24px 8px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    hr {
+      width: 56px;
+    }
+
+    p {
+      font-size: $size18;
+
+      &:first-child {
+        color: $yellowBg;
+        font-size: $size22;
+      }
+
+      &:last-child {
+        font-family: "Hiragino Kaku Gothic Pro";
+        font-weight: 300;
+      }
+    }
+  }
+}

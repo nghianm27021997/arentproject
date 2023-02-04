@@ -1,11 +1,22 @@
-import "./mealhistory.scss";
-import { MEAL_HISTORY_CONTENT } from "../../../constant";
 import { motion } from "framer-motion";
 
-const MealHistory = () => {
+import "./mealhistory.scss";
+
+type Content = {
+  image: string;
+  desciption: string;
+  title?: string;
+  hashtag?: string[];
+};
+
+type Props = {
+  ListData: Content[];
+};
+
+const MealHistory = ({ ListData }: Props) => {
   return (
     <div className='mealhistory'>
-      {MEAL_HISTORY_CONTENT.map((item, index) => (
+      {ListData.map((item: Content, index) => (
         <motion.div
           className='meal-content'
           key={index}
@@ -15,7 +26,18 @@ const MealHistory = () => {
           whileHover={{ scale: 1.1, zIndex: 100 }}
         >
           <motion.img src={item.image} alt='meal' />
-          <p>{item.desciption}</p>
+          <p className='desciption'>{item.desciption}</p>
+          {item.title ? <p className='title'>{item.title}</p> : ""}
+
+          {item.hashtag && item.hashtag?.length > 0 ? (
+            <div className="hashtag-box">
+              {item.hashtag?.map((item, index) => (
+                <p className='hashtag' key={index}>{item}</p>
+              ))}
+            </div>
+          ) : (
+            ""
+          )}
         </motion.div>
       ))}
     </div>

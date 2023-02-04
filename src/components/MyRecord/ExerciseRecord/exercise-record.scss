@@ -68,7 +68,11 @@
           color: $yellowBg;
           margin-left: unset !important;
           font-size: $size15 !important;
-          margin-top: -5px;
+        }
+
+        p {
+          font-family: "Hiragino Kaku Gothic Pro";
+          font-weight: 300;
         }
       }
 
@@ -76,6 +80,7 @@
         color: $whiteColor;
         flex-basis: 20px;
         font-size: $size11;
+        margin-top: 2px;
       }
     }
   }

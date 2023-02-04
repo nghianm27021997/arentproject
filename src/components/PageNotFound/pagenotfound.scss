@@ -1,0 +1,12 @@
+@import "../../variable";
+
+.pagenotfound {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: $size50;
+  background: $buttonBg;
+}
