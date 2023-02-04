@@ -1,11 +1,23 @@
+@import "../../../variable";
+
 .transit {
   width: 100%;
   display: flex;
   padding: 22px 216px;
   height: 184px;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include mobile {
+    padding: unset;
+    height: unset;
+  }
 
   div {
     flex-basis: 25%;
+
+    @include mobile {
+      flex-basis: 50%;
+    }
   }
 }

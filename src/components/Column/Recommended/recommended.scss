@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   color: $whiteColor;
+  flex-wrap: wrap;
 
   div {
     flex-basis: 23%;
@@ -15,6 +16,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mobile {
+      flex-basis: 49%;
+      margin-bottom: 10px;
+    }
 
     hr {
       width: 56px;

@@ -23,6 +23,11 @@
       border: 2px solid $border;
       padding: 16px;
 
+      @include mobile {
+        flex-basis: 49%;
+        height: unset;
+      }
+
       p {
         font-size: $size18;
 
@@ -36,6 +41,10 @@
           line-height: 17px;
           font-family: "Hiragino Kaku Gothic Pro";
           font-weight: 300;
+
+          @include mobile {
+            font-size: $size11;
+          }
         }
       }
     }

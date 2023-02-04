@@ -12,6 +12,10 @@
     margin-bottom: 10px;
     line-height: 22px;
 
+    @include mobile {
+      flex-basis: 49%;
+    }
+
     .hashtag-box {
       display: flex;
     }

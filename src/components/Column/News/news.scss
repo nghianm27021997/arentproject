@@ -2,4 +2,8 @@
 
 .news {
   margin-top: $mt56;
+
+  @include mobile {
+    margin-top: $mt20;
+  }
 }

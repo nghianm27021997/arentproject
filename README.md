@@ -15,7 +15,7 @@ The steps that I took while doing the test included:
 
  In summary during the coding process, I tried to be as optimized as possible: clean code, line spacing, format code with spaces 2, separate mockup data from components, use common variables, use "map" function to avoid code duplication, fix warnings on local and on the browser's F12.
  - For typescript, I define variables or values using the most explicit, do not use type="any".
- - For building layouts based on figma, I work very closely and build the most complete layout possible in terms of Width, Height, font-size, font-family, color, background ..., Also, I added mobile responsive with resolution < 576px.
+ - For building layouts based on figma, I work very closely and build the most complete layout possible in terms of Width, Height, font-size, font-family, color, background ..., Also, I added mobile responsive with resolution < 480px.
  - Create "PAGE NOT FOUND" when navigating wrong path. 
 
  How the website works is as follows:

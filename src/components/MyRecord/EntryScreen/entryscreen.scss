@@ -1,6 +1,20 @@
 @import "../../../variable";
 
 .entry-screen {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 288px;
+  }
+  
+  @include mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
 }

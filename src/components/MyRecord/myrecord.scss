@@ -1,4 +1,10 @@
+@import "../../variable";
+
 .my-record {
   min-height: 100vh;
   margin: 120px 160px 0px 160px;
+
+  @include mobile {
+    margin: 74px 0px 0px 0px;
+  }
 }

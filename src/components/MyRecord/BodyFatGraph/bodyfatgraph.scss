@@ -5,6 +5,10 @@
   background: $headerFooterBg;
   padding: 16px 24px;
 
+  @include mobile {
+    margin-top: $mt30;
+  }
+
   div {
     display: flex;
 

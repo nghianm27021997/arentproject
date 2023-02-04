@@ -9,6 +9,11 @@
     width: 134px;
     height: 116px;
     margin-top: 12px;
+
+    @include mobile {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
   }
 
   .content {
@@ -23,6 +28,10 @@
     img {
       width: 53px;
       height: 45px;
+
+      @include mobile {
+        margin-bottom: unset;
+      }
     }
     
     p {

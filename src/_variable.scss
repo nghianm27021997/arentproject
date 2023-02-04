@@ -1,9 +1,9 @@
 // bg
 $headerFooterBg: #414141;
-$chartBg: #2E2E2E;
-$yellowBg: #FFCC21;
+$chartBg: #2e2e2e;
+$yellowBg: #ffcc21;
 $grayBg: #777777;
-$buttonBg: linear-gradient(180deg, #FFCC21 0%, #FF963C 100%);
+$buttonBg: linear-gradient(180deg, #ffcc21 0%, #ff963c 100%);
 
 //text
 $whiteColor: #ffffff;
@@ -21,10 +21,24 @@ $size50: 50px;
 
 //hover
 $buttonBgHover: linear-gradient(180deg, #fdc612 0%, #fab476 100%);
-$textHover: #FF963C;
+$textHover: #ff963c;
 
-// margin top
+// margin top desktop
 $mt56: 56px;
+// margin top mobile
+$mt20: 20px;
+$mt30: 30px;
 
 //border
 $border: #707070;
+
+// mixin
+
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px; 
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}

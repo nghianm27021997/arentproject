@@ -25,19 +25,27 @@ const Navigation = () => {
 
   return (
     <div className='navigation'>
-      <img className="logo" src={Logo} alt='logo' onClick={() => redirectPage("/")} />
+      <img
+        className='logo'
+        src={Logo}
+        alt='logo'
+        onClick={() => redirectPage("/")}
+      />
       <ul>
-        <li onClick={() => redirectPage("myrecord")}>
+        <li
+          onClick={() => redirectPage("myrecord")}
+          className='display-desktop'
+        >
           <img src={IconMemo} alt='icon-memo' />{" "}
           <span className={pathName.includes("myrecord") ? "active" : ""}>
             自分の記録
           </span>
         </li>
-        <li>
+        <li className='display-desktop'>
           <img src={IconChallenge} alt='icon-challenge' />
           <span>チャレンジ</span>
         </li>
-        <li>
+        <li className='display-desktop'>
           <div className='iconContent'>
             <img src={IconInfo} alt='icon-meminfoo' />
             <img className='subIcon' src={IconInfoCount} alt='icon-infocount' />
@@ -59,7 +67,12 @@ const Navigation = () => {
             />
           )}
           <ul className={displaySubMenu ? "display" : "none"}>
-            <li onClick={() => redirectPage("myrecord")}>自分の記録</li>
+            <li
+              onClick={() => redirectPage("myrecord")}
+              className={pathName.includes("myrecord") ? "active" : ""}
+            >
+              自分の記録
+            </li>
             <li>体重グラフ</li>
             <li>目標</li>
             <li>選択中のコース</li>
