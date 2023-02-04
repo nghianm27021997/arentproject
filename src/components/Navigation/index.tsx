@@ -76,7 +76,12 @@ const Navigation = () => {
             <li>体重グラフ</li>
             <li>目標</li>
             <li>選択中のコース</li>
-            <li onClick={() => redirectPage("column")}>コラム一覧</li>
+            <li
+              onClick={() => redirectPage("column")}
+              className={pathName.includes("column") ? "active" : ""}
+            >
+              コラム一覧
+            </li>
             <li>設定</li>
           </ul>
         </li>
